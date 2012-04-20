@@ -37,6 +37,14 @@
 }
 
 - (void) motionWasRecognized:(NSNotification*)notif {
+	CABasicAnimation* shake = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+	shake.fromValue = [NSNumber numberWithFloat:-M_PI/32];
+	shake.toValue   = [NSNumber numberWithFloat:+M_PI/32];
+	shake.duration = 0.1;
+	shake.autoreverses = YES;
+	shake.repeatCount = 4;
+	[self.shakeFeedbackOverlay.layer addAnimation:shake forKey:@"shakeAnimation"];
+	
 	self.shakeFeedbackOverlay.alpha = 1.0;
 	[UIView animateWithDuration:2.0 delay:0.0
 						options:UIViewAnimationOptionCurveEaseIn | UIViewAnimationOptionAllowUserInteraction
