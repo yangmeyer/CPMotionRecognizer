@@ -64,7 +64,7 @@ CPMotionRecognizer was built with [Automatic Reference Counting](http://develope
 
 License
 -------
-The CPMotionRecognizer component is released under the MIT License (see [License.md](License.md)).
+The CPMotionRecognizer component is released under the MIT License (see [License.md](https://github.com/yangmeyer/CPMotionRecognizer/blob/master/License.md)).
 
 Attribution is not required but it is good form. Feel free to comment, fork, and submit pull requests!
 
