@@ -1,0 +1,24 @@
+
+# Woohoo!
+# Your designer is using Gemba to add and update assets all by themselves. Gemba also
+# catches common problems before they reach you, like invalid or mismatched dimensions.
+# 
+# This YAML file configures this repo for Gemba. Push changes to this file, and
+# your designers will use your updated config next time they launch Gemba.
+
+remote_url: https://github.com/yangmeyer/CPMotionRecognizer
+asset_extensions:
+- jpeg
+- jpg
+- png
+- gif
+commit_message_prefix: ''
+ignored_dirs:
+- Pods
+- Frameworks
+- Submodules
+- External
+repo_name: CPMotionRec
+
+# -- 
+# Learn more at http://gemba.io or contact support@gemba.io
